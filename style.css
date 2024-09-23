@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+:root {
+  --accent-color: #fdcb6e;
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: "Abril Fatface", serif;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(https://www.0xkishan.com/_next/image?url=%2Fblogs%2Fsearch%2Fhero.jpg&w=3840&q=75);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#searchInput {
+  flex-grow: 1;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+#searchButton {
+  padding: 15px 25px;
+  font-size: 16px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.history-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.history-container h2 {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+#searchHistory {
+  list-style-type: none;
+  padding: 0;
+}
+
+#searchHistory li {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+}
+
+#clearHistoryButton {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  #searchInput, #searchButton {
+    font-size: 14px;
+  }
+}
